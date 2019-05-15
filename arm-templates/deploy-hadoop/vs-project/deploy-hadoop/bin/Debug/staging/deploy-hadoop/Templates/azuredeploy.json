@@ -83,10 +83,10 @@
     },
     "ambariServerImageSku": {
       "type": "string",
-      "defaultValue": "6.6",
+      "defaultValue": "7.6",
       "allowedValues": [
-        "6.5",
-        "6.6",
+        "7.5",
+        "7.6",
         "14.04.2-LTS",
         "16.04-LTS"
       ],
@@ -162,7 +162,7 @@
     },
     "hadoopServerAdminPassword": {
       "type": "securestring",
-      "defaultValue": "DataMein1@#$",
+      "defaultValue": "!BolinaStrett@20!",
       "metadata": {
         "Description": "The Local Password of the account being created on the Hadoop Server Instance."
       }
@@ -191,10 +191,10 @@
     },
     "hadoopServerImageSku": {
       "type": "string",
-      "defaultValue": "6.6",
+      "defaultValue": "7.6",
       "allowedValues": [
-        "6.5",
-        "6.6",
+        "7.5",
+        "7.6",
         "14.04.2-LTS",
         "16.04-LTS"
       ],
@@ -214,21 +214,22 @@
     },
     "hadoopServerDataDiskSize": {
       "type": "int",
-      "defaultValue": 50,
+      "defaultValue": 32,
       "metadata": {
         "description": "The Size of the Hadoop Server Instance Data Disk in GB."
       }
     },
     "hadoopServerVMSize": {
       "type": "string",
-      "defaultValue": "Standard_DS3_v2",
+      "defaultValue": "Standard_DS8_v3",
       "allowedValues": [
         "Standard_A0",
         "Standard_A1",
         "Standard_DS1_v2",
         "Standard_DS2_v2",
         "Standard_DS3_v2",
-        "Standard_DS4_v2"
+        "Standard_DS4_v2",
+        "Standard_DS8_v3"
       ],
       "metadata": {
         "description": "The Size of the Hadoop Server Instance VM being deployed in Azure."
